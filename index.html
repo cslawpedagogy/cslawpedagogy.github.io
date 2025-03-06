@@ -3,28 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLAPP Workshop</title>
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
-    <link rel="stylesheet" href="custom.css">
+    <title>Workshop on Computer Science, Law, and Policy Pedagogy 2025</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Workshop on Computer Science, Law, and Policy Pedagogy (CLAPP)</h1>
-    <p>A workshop co-located with the Privacy Enhancing Technologies Symposium 2025/p>
-    <p></p>
-    <a class="button" href="index.html">Main</a>
-    <a class="button" href="schedule.html">Schedule</a>
-    <a class="button" href="resources.html">Resources</a>
-  </header>
+    <header>
+        <h1>Workshop on Computer Science, Law, and Policy Pedagogy 2025</h1>
+        <p>Co-located with the Privacy Enhancing Technologies Symposium in July 2025</p>
+    </header>
+    
+    <div id="nav-placeholder"></div>
+    
+    <main>
+        <section class="overview">
+            <h2>Workshop Overview</h2>
+            <p>Over the last couple of years there has been a mass proliferation of courses that intentionally put students from computing disciplines and students developing expertise in law and policy into a single classroom. These courses offer an exciting avenue to cultivate cross-disciplinary skills for students who hope to play translational roles during their careers or simply want to practice their own discipline in a more informed way.</p>
+            <p>This workshop is aimed at faculty or TAs who teach these joint computer science, law, and policy courses (i.e. students who enroll both CS and law/policy students). The workshop will focus on sharing, developing and refining pedagogy for these classes. The workshop will feature invited speakers and have structured activities through which participants can share best practices, helpful pedagogical methods, lessons learned, and helpful resources for these courses. Through this workshop we will also build a community wiki-style website with the resources collected, that can be updated into the future; this collection of resources for teaching across these disciplines will help new and experienced faculty alike teach these courses.</p>
+        </section>
+        <section class="schedule">
+            <h2>Schedule</h2>
+            <ul>
+                <li><strong>9:00 AM - 9:20 AM:</strong> Welcome activity and introductions</li>
+                <li><strong>9:20 AM - 11:00 AM:</strong> Invited presentations</li>
+                <li><strong>11:00 AM - 11:10 AM:</strong> Coffee break</li>
+                <li><strong>11:10 AM - 12:10 PM:</strong> Guided brainstorming session</li>
+                <li><strong>12:10 PM - 1:30 PM:</strong> Lunch</li>
+                <li><strong>1:30 PM - 2:45 PM:</strong> Panel and discussion</li>
+                <li><strong>2:45 PM - 3:00 PM:</strong> Coffee break</li>
+                <li><strong>3:00 PM - 5:00 PM:</strong> Resources Hackathon</li>
+                <li><strong>5:00 PM - 5:15 PM:</strong> Wrap-up</li>
+            </ul>
+        </section>
+        <section class="organizers">
+            <h2>Conference Organizers</h2>
+            <p>Sarah Scheffler (Carnegie Mellon University) and Gabriel Kaptchuk (University of Maryland, College Park)</p>
+        </section>
+    </main>
 
-  <main>
-	  <p>Placeholder</p>
-
-
-  </main>
-
-  <footer>
-    <p>Workshop on Computer Science, Law, and Policy Pedagogy 2025</p>
-  </footer>
+    <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("nav-placeholder").innerHTML = data);
+    </script>
+    <footer>
+        <p>2025 Workshop on Computer Science, Law, and Policy Pedagogy.</p>
+    </footer>
 </body>
 </html>
+
